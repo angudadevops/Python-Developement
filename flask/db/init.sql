@@ -9,5 +9,4 @@ CREATE TABLE MyUsers (
 INSERT INTO MyUsers
   (firstname, lastname)
 VALUES
-  ('Anurag', 'Guda'),
-  ('Madhavi', 'Mummadireddy');
+  ('Anurag', 'Guda');
