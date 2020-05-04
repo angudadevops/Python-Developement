@@ -55,6 +55,22 @@ Run the below commands to run the applications
 docker run -d -p 3306:3306 --name db mysqldb
 docker run -d -p 5000:5000 --name flaskweb --link db:db flaskweb
 ```
+
+### Using Kubernets
+Are you using kubernetes as a service, then here's commands to run your application as pods
+
+```
+kubectl create -f db-deployment.yaml
+
+kubectl create -f app-deployment.yaml
+```
+
+To get nodeport of app deployment, run the below command 
+
+```
+kubectl get svc
+```
+
 ### Usage
 
 Access the web application with below url
