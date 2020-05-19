@@ -4,9 +4,9 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  build-and-test:
+  Python:
     executor: python/default
-    working_directory: ~/flask/app
+    working_directory: ~/flask/app/
     steps:
       - checkout
       - python/load-cache
@@ -14,9 +14,9 @@ jobs:
       - python/save-cache
       - run:
           command: ./app.py
-          name: Test
+          name: App
 
 workflows:
   main:
     jobs:
-      - build-and-test
+      - Python
