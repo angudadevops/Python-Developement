@@ -1,4 +1,4 @@
-# Welcome to Python Web Development. [![HitCount](http://hits.dwyl.com/angudadevops/Python-Developement.svg)](http://hits.dwyl.com/angudadevops/Python-Developement)
+# Welcome to Python Web Development.
 
 PreRequisites:
 - Docker
